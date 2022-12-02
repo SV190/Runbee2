@@ -1,0 +1,20 @@
+@charset "UTF-8";
+header {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.text-uppercase {
+  color: aqua;
+}
+
+.content {
+  /* Скрываем сразу контент */
+  display: none;
+}
+
+.wrapper a:hover ~ .content {
+  /* При наведении на ссылку в раппере, откроется контент */
+  display: block;
+}
+
+/*# sourceMappingURL=Header.module.css.map */

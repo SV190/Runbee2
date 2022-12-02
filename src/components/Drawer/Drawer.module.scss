@@ -1,0 +1,326 @@
+
+
+
+.hed {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #e5e5e5; 
+  background: #fff;}
+  .overlay {
+    opacity: 0;
+    position:fixed ;
+    
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-out;
+    visibility: hidden;
+    overflow: hidden;
+    .overlayDrawer {
+      position: absolute;
+      width: 450px;
+      height: 100%;
+      right: -420px;
+      padding: 30px;
+      background: #ffffff;
+      box-shadow: -10px 4px 24px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease-out;
+    }
+    
+    .overlayItems {
+      overflow: auto;
+      margin-bottom: 40px;
+      flex: 1;
+    }
+    .overlayTotal {
+      ul {
+        display: block;
+        margin-bottom: 40px !important;
+      }
+      div {
+        flex: 1;
+        height: 1px;
+        border-bottom: 1px dashed #dfdfdf;
+        position: relative;
+        top: -4px;
+        margin: 0 7px;
+      }
+
+      .greenButton {
+        position: relative;
+        &:disabled {
+          animation: buttonloading 0.6s ease-in-out infinite;
+        }
+        &:hover {
+          img {
+            transform: translateX(5px);
+            
+          }
+        }
+        img {
+          position: absolute;
+          right: 30px;
+          top: 20px;
+          transition: all 0.1s ease-in-out;
+          
+          
+        }
+      }
+
+      li {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+
+  
+
+  
+
+  .removeIcon{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    
+  }
+
+ 
+
+  .productTitle {    
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -moz-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #1d1d20;
+  }
+  
+
+  
+
+  .he{
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #b7bec4;
+    margin-bottom: 5px;
+  }
+
+  .sum{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 700;
+    color: #1d1d20;
+  }
+
+
+  /*product_card .product__params_list[data-v-cfeb6dc6], .product_card .product__params_list_item[data-v-cfeb6dc6] {
+    /* display: -webkit-box; */
+    /* display: -webkit-flex; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;*/
+
+
+  .cart {
+    background: #ffffff;
+    border: 1px solid rgba(80, 80, 80, 0.151);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    
+    align-items: center;
+    margin-bottom: 20px;
+
+    .cartImg {
+      height: 200px;
+      width: 200px;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 20px;
+      max-height: 180px;
+      max-width: 100%;
+      min-height: 75px;
+      
+      margin: 0 auto;
+      
+      
+    }
+    
+    .sp{
+    
+      display: flex;
+      border-top: 1px solid rgba(80, 80, 80, 0.151);
+      padding-top: 5px;
+      margin-top: 10px;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -moz-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      
+    }
+
+    .productItem {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -moz-box-orient: vertical;
+      -moz-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -moz-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 10px 14px 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    .removeIcon{
+    background: rgba(114,114,138,.12);
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    
+    
+    
+    -webkit-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    
+    margin: auto;
+    margin-right: 0px;
+    margin-bottom: -40px;
+    
+  
+    .re{-webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      box-sizing: content-box;
+      width: 13px;
+      height: 15px;
+      fill: none;
+      cursor: pointer;
+      overflow: hidden;
+    }}
+
+   
+  }
+
+  .remove {
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out ;
+    
+
+    &:hover {
+      
+      opacity: 0.8;
+      
+    }
+  }
+
+  .deleted{
+    right: 100px;
+  }
+
+  
+
+  .ware{
+    margin-top: -10px;
+  }
+
+  .greenButton {
+    width: 100%;
+    height: 55px;
+    background: #181717;
+    border-radius: 15px;
+    border: 1;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+
+
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      background: lighten(#ffffff, 5%);
+      color: #050505;
+    }
+    &:active {
+      background: darken(#0a0a0a, 10%);
+      color: #fff;
+      
+    }
+    &:disabled {
+      background-color: #0c0c0c;
+      cursor: default;
+    }
+  }
+
+  .img{
+    color:#000000;
+  }
+
+  @keyframes buttonloading {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .overlayVisible {
+    visibility: visible;
+    opacity: 1;
+    
+    .overlayDrawer {
+      right: 0px;
+      
+    }
+  }
+
+
+  
